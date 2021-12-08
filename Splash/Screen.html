@@ -20,7 +20,12 @@
 
     <!-- Redigir a la Home -->
 
-    <script type="text/javascript">
-        //Redireccionamiento tras 5 segundos
-        setTimeout(function () { window.location.href = "https://hartico.com/game"; }, 3000);
-    </script>
+<script>
+
+function cerrar() {
+var ventana = window.self;
+ventana.opener = window.self;
+ventana.close();
+}
+setTimeout('cerrar()',3000); //5000 = 5 segundos.
+</script>
