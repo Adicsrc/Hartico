@@ -20,12 +20,6 @@
 
     <!-- Redigir a la Home -->
 
-<script>
-
-function cerrar() {
-var ventana = window.self;
-ventana.opener = window.self;
-ventana.close();
-}
-setTimeout('cerrar()',3000); //5000 = 5 segundos.
-</script>
+ <script>
+ setTimeout(window.close, 0);
+ </script>
